@@ -3,17 +3,45 @@
     padding: 0;
 }
 
-header {
+body {
+    
+}
+
+#wrapper {
 
 }
 
-#logo {
-    height: 75px;
-    width: auto;
+.menu_button {
+    display: flex;
+    background: rgb(228, 225, 248);
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    background: rgb(243, 246, 255);
+    flex-direction: column;
+    align-items: center;
 }
 
 nav {
+    
+}
 
+#nav_list {
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logo {
+    height: 120px;
+    width: auto;
 }
 
 h1 {
