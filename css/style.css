@@ -4,21 +4,11 @@
 }
 
 body {
+    background-image: url("../img/background.jpg");
+    background-size: 100vw;
     
-}
-
-#wrapper {
-
-}
-
-.menu_button {
-    display: flex;
-    background: rgb(228, 225, 248);
-    width: 150px;
-    height: 40px;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
+    height: 4000vh;
+    width: 100vw;
 }
 
 header {
@@ -29,21 +19,67 @@ header {
 }
 
 nav {
-    
+    margin: 10px;
+    width: 100%;
 }
 
 #nav_list {
-    margin: 10px;
+    width: 100%;
     display: flex;
+    list-style: none;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu_button {
+    display: flex;
+    background: rgb(228, 225, 248);
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    justify-content: center;
     align-items: center;
 }
 
 #logo {
     height: 120px;
     width: auto;
+    border-radius: 15%
 }
 
 h1 {
     font-family: ;
+}
+
+#aboutWrapper {
+    display: grid;
+    width: 70vw;
+    height: 400vh;
+    align-self: center;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 20%);
+    grid-template-areas: 
+      "a1"
+      "a2"
+      "a3"
+      "a4"
+    ;
+}
+
+#about1 {
+    grid-area: a1;
+    display: flex;
+    background:rgba(243, 246, 255, 0.8);
+    border-radius: 15px;
+    flex-direction: column;
+    
+}
+
+#about2 {
+
+}
+
+#about3 {
+
 }
