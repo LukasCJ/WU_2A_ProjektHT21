@@ -3,28 +3,17 @@
     padding: 0;
 }
 
-body {
-    background-image: url("../img/background.jpg");
-    background-size: 100vw;
-    
-
-    height: 4000vh;
-    width: 100vw;
-}
-
 header {
     display: flex;
+    width: 100vw;
     background: rgb(14, 3, 27);
     flex-direction: column;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-nav {
-    width: 100%;
-}
-
-#nav_list {
-    width: 100%;
+#navList {
+    width: 100vw;
     height: 25vh;
     display: flex;
     list-style: none;
@@ -32,7 +21,7 @@ nav {
     align-items: center;
 }
 
-.menu_button {
+.menuButton {
     display: flex;
     background: rgb(228, 225, 248);
     width: 15vw;
@@ -41,18 +30,17 @@ nav {
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-.menu_button:hover {
+.menuButton:hover {
     background: rgb(179, 150, 218);
 }
 
 #logo {
     width: 10vw;
     height: auto;
-    border-radius: 15%;
     transition: 0.4s;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
@@ -61,10 +49,10 @@ nav {
     width: 10.6vw;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+/* @import url("https://fonts.googleapis.com/css?family=Oswald"); */
 
 h2 {
-    font-family: 'Oswald', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.7rem;
     font-weight: 650;
 }
@@ -90,18 +78,24 @@ a {
 #welcome {
     width: 40vw;
     height: 10vh;
-    margin-top: 10vh;
+    margin: 10vh;
     background-color: rgba(243, 246, 255, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 #aboutWrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-image: url("../img/background.jpg");
+    background-size: 100vw;
+    /* background-repeat: no-repeat; */
+    height: max-content;
+    width: 100vw;
 }
 
 .about {
@@ -110,9 +104,10 @@ a {
     display: flex;
     background-color: rgba(243, 246, 255, 0.6);
     border-radius: 15px;
-    margin-top: 10vh;
+    margin-bottom: 10vh;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 #aboutPhoto1{
@@ -142,4 +137,103 @@ a {
     flex-direction: column;
     align-items: center;
     margin-right: 4vw;
+}
+
+footer {
+    display: flex;
+    width: 100vw;
+    height: 25vh;
+    background: rgb(14, 3, 27);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#whiteH2 {
+    color: white;
+}
+
+#mediaLogosWrapper {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    height: 10vh;
+}
+
+.mediaLogos {
+    height: 100%;
+    margin: 0.5rem;
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.mediaLogos:hover {
+    filter: brightness(1.5);
+}
+
+/* For Food Menu */
+
+#menuWrapper {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../img/background.jpg");
+    background-size: 100vw;
+}
+
+#menuGrid {
+    background-color: rgba(243, 246, 255, 0.6);
+    border-radius: 15px;
+    margin: 10vh;
+    padding: 4vw;
+    display: grid;
+    /* background-image: url("../img/background.jpg");
+    background-size: 100vw; */
+    /* background-repeat: no-repeat; */
+    height: 100vh;
+    width: 66vw;
+    grid-template-columns: 1.2fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+    grid-template-areas:
+        "p1 t1"
+        "p1 d1"
+        "p2 t2"
+        "p2 d2"
+    ;
+    gap: ;
+}
+
+#itemPhoto1 {
+    grid-area: p1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-right: 4vw;
+    border-radius: 5px;
+}
+
+#itemTitle1 {
+    grid-area: t1;
+}
+
+#itemDesc1 {
+    grid-area: d1;
+}
+
+#itemPhoto2 {
+    grid-area: p2;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+#itemTitle2 {
+    grid-area: t2;
+}
+
+#itemDesc2 {
+    grid-area: d2;
 }
