@@ -5,26 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
     <header>
         <ul id="navList">
             <a href="menu.html"><li class="menuButton">Menu</li></a>
             <a href="locations.html"><li class="menuButton">Locations</li></a>
-            <a href="index.html"><li><img src="img/logo.png" alt="restaurant logo" id="logo"></li></a>
+            <a href="index.html"><li><img src="img\logo.png" alt="restaurant logo" id="logo"></li></a>
             <a href="history.html"><li class="menuButton">History</li></a>
             <a href="contacts.html"><li class="menuButton">Contacts</li></a>
         </ul>   
     </header>
-    <div id="menuWrapper">
-        <section id="menuGrid">
-            <img src="img/item1.jpg" alt="Oreo Burger" id="itemPhoto1">
-            <h2 id="itemTitle1">Yummy Yummy Byrgi</h2>
-            <p id="itemDesc1">Eaque fugiat accusamus excepturi vero reiciendis hic unde quae illum facilis optio.</p>
-            <img src="img/item2.jpg" alt="Oreo Shake" id="itemPhoto2">
-            <h2 id="itemTitle2">SHaky SHaKy</h2>
-            <p id="itemDesc2">Fugit calorie accusantium modi, temporibus ipsum blanditiis debitis expedita sint dolorem iste consectetur.</p>
+    <div id="locationsWrapper">
+        <section class="locationSection">
+            <a href="img/location1.jpg" class="locationPhotoContainer"><img src="img/location1.jpg" alt="resturaunt location" id="locationPhoto1"></a>
+            <h2 class="locationName">Place 1</h2>
+        </section>
+        <section class="locationSection">
+            <a href="img/location1.jpg" class="locationPhotoContainer"><img src="img/location1.jpg" alt="resturaunt location" id="locationPhoto2"></a>
+            <h2 class="locationName">Place 2</h2>
+        </section>
+        <section id="locationLast" class="locationSection">
+            <a href="img/location1.jpg" class="locationPhotoContainer"><img src="img/location1.jpg" alt="resturaunt location" id="locationPhoto1"></a>
+            <h2 class="locationName">Place 3</h2>
         </section>
     </div>
     <footer>
